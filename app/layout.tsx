@@ -13,6 +13,7 @@ import { Docs, Github, Times } from "./icons";
 import { Twitter } from "./icons";
 import { Discord } from "./icons";
 import { Metadata } from "next";
+import CustomPageUserButton from "./user-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -83,7 +84,7 @@ export default function RootLayout({
                   }}
                 />
               </div>
-              <UserButton afterSignOutUrl="/" />
+              <CustomPageUserButton />
             </SignedIn>
           </header>
           <main className="grow">{children}</main>
